@@ -1,0 +1,245 @@
+.btn-play {
+    background-color: #fff;
+    background-color: var(--geeks-white);
+    color: #754ffe;
+    color: var(--geeks-primary);
+    transition: .2s ease
+}
+
+.btn-play:hover {
+    background-color: #754ffe;
+    background-color: var(--geeks-primary);
+    color: #fff;
+    color: var(--geeks-white);
+    transition: .2s ease
+}
+
+.btn-xs {
+    font-size: .75rem;
+    padding: .22rem .75rem
+}
+
+.btn-icon {
+    align-items: center;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: .92969rem;
+    font-weight: 400;
+    height: 2.5rem;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 2.5rem
+}
+
+.btn-icon.btn-xs {
+    font-size: .75rem;
+    height: 1.53125rem;
+    width: 1.53125rem
+}
+
+.btn-group-sm>.btn-icon.btn,.btn-icon.btn-sm {
+    font-size: .875rem;
+    height: 2.1875rem;
+    width: 2.1875rem
+}
+
+.btn-group-lg>.btn-icon.btn,.btn-icon.btn-lg {
+    font-size: 1rem;
+    height: 3.36875rem;
+    width: 3.36875rem
+}
+
+.dropdown.active.show .btn-icon {
+    background-color: #ede9fe;
+    color: #754ffe!important;
+    color: var(--geeks-primary)!important
+}
+
+.primary-hover:focus,.primary-hover:hover {
+    background-color: #754ffe;
+    background-color: var(--geeks-primary);
+    border: #754ffe;
+    border: var(--geeks-primary);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.primary-hover:focus {
+    box-shadow: 0 0 0 .2rem #8161f480
+}
+
+.primary-hover.active {
+    background-color: #754ffe;
+    background-color: var(--geeks-primary);
+    border: #754ffe;
+    border: var(--geeks-primary);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.btn.btn-focus-none:focus {
+    box-shadow: none
+}
+
+.btn-link {
+    color: #754ffe;
+    color: var(--geeks-link-color);
+    font-weight: 600;
+    text-decoration: underline
+}
+
+.btn-link:hover {
+    color: #5e3fcb;
+    color: var(--geeks-link-hover-color)
+}
+
+.btn-link:focus,.btn-link:hover {
+    text-decoration: underline
+}
+
+.btn-link.disabled,.btn-link:disabled {
+    color: #475569
+}
+
+.btn-dashed {
+    border-style: dashed!important
+}
+
+.btn-dashed:hover {
+    border-color: #754ffe!important;
+    border-color: var(--geeks-primary)!important;
+    color: #754ffe!important;
+    color: var(--geeks-primary)!important
+}
+
+.btn-dashed:focus {
+    box-shadow: none!important
+}
+
+.btn-ghost {
+    --geeks-btn-font-weight: 600;
+    --geeks-btn-color: var(--geeks-gray-400);
+    --geeks-btn-bg: #0000;
+    --geeks-btn-border-color: #0000;
+    --geeks-btn-border-radius: 0.5rem;
+    --geeks-btn-hover-color: var(--geeks-gray-600);
+    --geeks-btn-hover-bg: var(--geeks-btn-ghost-bg);
+    --geeks-btn-hover-border-color: var(--geeks-btn-ghost-bg);
+    --geeks-btn-focus-shadow-rgb: var(--bd-gray-300-rgb);
+    --geeks-btn-active-color: var(--geeks-btn-hover-color);
+    --geeks-btn-active-bg: var(--geeks-btn-ghost-bg);
+    --geeks-btn-active-border-color: var(--geeks-btn-ghost-bg)
+}
+
+.icon-checked {
+    opacity: 0
+}
+
+.btn-check:active+.btn .icon-checked,.btn-check:checked+.btn .icon-checked,.btn.active .icon-checked,.btn.show .icon-checked,.btn:active .icon-checked {
+    opacity: 1
+}
+
+.theme-icon-active {
+    line-height: 1.5
+}
+
+.btn-scroll-top {
+    background-color: #fff;
+    background-color: var(--geeks- #fff);
+    border-radius: 10px;
+    bottom: 1.5rem;
+    box-shadow: inset 0 0 0 .1rem #e3e5e940;
+    opacity: 0;
+    position: fixed;
+    right: 1.5rem;
+    transform: translateY(.75rem);
+    transition: all .2s linear,margin-right 0s;
+    visibility: hidden;
+    z-index: 1010
+}
+
+.btn-scroll-top,.btn-scroll-top:after {
+    cursor: pointer;
+    display: block;
+    height: 3rem;
+    width: 3rem
+}
+
+.btn-scroll-top:after {
+    color: #754ffe;
+    content: "";
+    font-family: bootstrap-icons!important;
+    font-size: 1.5rem;
+    left: 0;
+    line-height: 3rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all .2s linear;
+    z-index: 1
+}
+
+.btn-scroll-top.active-progress {
+    transform: translateY(0);
+    visibility: visible
+}
+
+@media(min-width: 320px) {
+    .btn-scroll-top.active-progress {
+        opacity:1
+    }
+}
+
+.btn-scroll-top svg path {
+    fill: none
+}
+
+.btn-scroll-top svg.progress-square path {
+    stroke: #754ffe;
+    stroke-width: 2;
+    box-sizing: border-box;
+    transition: all .2s linear
+}
+
+.btn-outline-white {
+    --geeks-btn-color: #64748b;
+    --geeks-btn-border-color: #cbd5e1;
+    --geeks-btn-hover-color: #1e293b;
+    --geeks-btn-hover-bg: #e2e8f0;
+    --geeks-btn-hover-border-color: #e2e8f0;
+    --geeks-btn-focus-shadow-rgb: 51,58,74;
+    --geeks-btn-active-color: #1e293b;
+    --geeks-btn-active-bg: #e2e8f0;
+    --geeks-btn-active-border-color: #e2e8f0;
+    --geeks-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    --geeks-btn-disabled-color: #192e4d;
+    --geeks-btn-disabled-bg: #0000;
+    --geeks-btn-disabled-border-color: #e2e8f0;
+    --geeks-gradient: none
+}
+
+.btn-tag {
+    --geeks-btn-color: #64748b;
+    --geeks-btn-border-color: #e2e8f0;
+    --geeks-btn-hover-color: #1e293b;
+    --geeks-btn-hover-bg: #e2e8f0;
+    --geeks-btn-hover-border-color: #e2e8f0;
+    --geeks-btn-focus-shadow-rgb: 51,58,74;
+    --geeks-btn-active-color: #1e293b;
+    --geeks-btn-active-bg: #e2e8f0;
+    --geeks-btn-active-border-color: #e2e8f0;
+    --geeks-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    --geeks-btn-disabled-color: #192e4d;
+    --geeks-btn-disabled-bg: #0000;
+    --geeks-btn-disabled-border-color: #e2e8f0;
+    --geeks-gradient: none;
+    --geeks-btn-border-radius: 50rem
+}
+
+.btn-float-button {
+    bottom: -7px;
+    position: fixed;
+    right: 51px;
+    z-index: 999
+}

@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeks React Page 2</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/row_col.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/list_group.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/avatar.css">
+
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+</head>
+
+<body>
+    <div id="root">
+        <nav class="navbar p-2 navbar-default py-2 navbar navbar-expand-lg navbar-light">
+            <div class="px-0 ps-2 container-fluid"><a class="navbar-brand" href="/"><img
+                        src="/images/logo.svg" alt="Geeks React UI" class=""></a>
+                <div class="navbar-nav navbar-right-wrap ms-auto d-lg-none nav-top-wrap d-none">
+                    
+                    <ul class="navbar-right-wrap ms-2 d-flex nav-top-wrap navbar-nav">
+                        <li class="dropdown"><a
+                                class="text-dark icon-notifications me-lg-1  btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted  "
+                                id="dropdownNotification" aria-expanded="false"><i class="fe fe-bell"></i></a>
+                            <div data-bs-popper="static"
+                                class="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end mt-3 py-0 dropdown-menu show dropdown-menu-end"
+                                aria-labelledby="dropdownNotification">
+                                <div
+                                    class="border-bottom px-3 pt-3 pb-3 d-flex justify-content-between align-items-end">
+                                    <span class="h4 mb-0">Notifications</span><a class="text-muted"
+                                        href="# "><span class="align-middle"><i
+                                                class="fe fe-settings me-1"></i></span></a></div>
+                                <div data-simplebar="init" style="max-height: 300px;">
+                                    <div class="simplebar-wrapper" style="margin: 0px;">
+                                        <div class="simplebar-height-auto-observer-wrapper">
+                                            <div class="simplebar-height-auto-observer"></div>
+                                        </div>
+                                        <div class="simplebar-mask">
+                                            <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                <div class="simplebar-content-wrapper" tabindex="0" role="region"
+                                                    aria-label="scrollable content"
+                                                    style="height: auto; overflow: hidden;">
+                                                    <div class="simplebar-content" style="padding: 0px;">
+                                                        <div class="list-group list-group-flush">
+                                                            <div class="bg-light list-group-item">
+                                                                <div class="row">
+                                                                    <div class="col"><a class="text-body"
+                                                                            href="">
+                                                                            <div class="d-flex"><img
+                                                                                    src="/static/media/avatar-1.d2fd9642fd3628734b27.jpg"
+                                                                                    alt=""
+                                                                                    class="avatar-md rounded-circle">
+                                                                                <div class="ms-3">
+                                                                                    <h5 class="fw-bold mb-1">Kristin
+                                                                                        Watson</h5>
+                                                                                    <p class="mb-3">Krisitn Watsan like
+                                                                                        your comment on course
+                                                                                        Javascript Introduction!</p>
+                                                                                    <span class="fs-6 text-muted"><span><span
+                                                                                                class="fe fe-thumbs-up text-success me-1"></span>2
+                                                                                            hours ago</span><span
+                                                                                            class="ms-1">2:19
+                                                                                            PM</span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></div>
+                                                                    <div class="text-center me-2 col-auto"><a
+                                                                            href=""><span
+                                                                                class="me-2"><span
+                                                                                    class="badge-dot badge bg-secondary"></span>
+                                                                            </span></a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="list-group-item">
+                                                                <div class="row">
+                                                                    <div class="col"><a class="text-body"
+                                                                            href="">
+                                                                            <div class="d-flex"><img
+                                                                                    src="./images/navbar_avatar.jpg"
+                                                                                    alt=""
+                                                                                    class="avatar-md rounded-circle">
+                                                                                <div class="ms-3">
+                                                                                    <h5 class="fw-bold mb-1">Brooklyn
+                                                                                        Simmons</h5>
+                                                                                    <p class="mb-3">Just launched a new
+                                                                                        Courses React for Beginner.</p>
+                                                                                    <span class="fs-6 text-muted"><span><span
+                                                                                                class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                            9,</span><span
+                                                                                            class="ms-1">1:20
+                                                                                            PM</span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></div>
+                                                                    <div class="text-center me-2 col-auto"><a
+                                                                            href=""><span
+                                                                                class="me-2"><span
+                                                                                    class="badge-dot badge bg-secondary"></span>
+                                                                            </span></a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="list-group-item">
+                                                                <div class="row">
+                                                                    <div class="col"><a class="text-body"
+                                                                            href="">
+                                                                            <div class="d-flex"><img
+                                                                                    src="/images/navbar_avatar.jpg"
+                                                                                    alt=""
+                                                                                    class="avatar-md rounded-circle">
+                                                                                <div class="ms-3">
+                                                                                    <h5 class="fw-bold mb-1">Jenny
+                                                                                        Wilson</h5>
+                                                                                    <p class="mb-3">Krisitn Watsan like
+                                                                                        your comment on course
+                                                                                        Javascript Introduction!</p>
+                                                                                    <span class="fs-6 text-muted"><span><span
+                                                                                                class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                            9,</span><span
+                                                                                            class="ms-1">1:56
+                                                                                            PM</span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></div>
+                                                                    <div class="text-center me-2 col-auto"><a
+                                                                            href=""><span
+                                                                                class="me-2"><span
+                                                                                    class="badge-dot badge bg-secondary"></span>
+                                                                            </span></a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="list-group-item">
+                                                                <div class="row">
+                                                                    <div class="col"><a class="text-body"
+                                                                            href="">
+                                                                            <div class="d-flex"><img
+                                                                                    src="/images/navbar_avatar.jpg"
+                                                                                    alt=""
+                                                                                    class="avatar-md rounded-circle">
+                                                                                <div class="ms-3">
+                                                                                    <h5 class="fw-bold mb-1">Sina Ray
+                                                                                    </h5>
+                                                                                    <p class="mb-3">You earn new
+                                                                                        certificate for complete the
+                                                                                        Javascript Beginner course.</p>
+                                                                                    <span class="fs-6 text-muted"><span><span
+                                                                                                class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                            9,</span><span
+                                                                                            class="ms-1">1:56
+                                                                                            PM</span></span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a></div>
+                                                                    <div class="text-center me-2 col-auto"><a
+                                                                            href="/marketing/courses/course-single/"><span
+                                                                                class="me-2"><span
+                                                                                    class="badge-dot badge bg-secondary"></span>
+                                                                            </span></a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div>
+                                    </div>
+                                    <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                                        <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                                    </div>
+                                    <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
+                                        <div class="simplebar-scrollbar" style="height: 0px; display: none;"></div>
+                                    </div>
+                                </div>
+                                <div class="border-top px-3 pt-3 pb-3"><a class="text-link fw-semi-bold"
+                                        href="">See all Notifications</a></div>
+                            </div>
+                        </li>
+                        <li class="ms-1 dropdown"><a class="rounded-circle  " id="dropdownUser" aria-expanded="false">
+                                <div class="avatar avatar-md avatar-indicators avatar-online"><img alt="avatar"
+                                        src="/images/navbar_avatar.jpg" class="rounded-circle">
+                                </div>
+                            </a>
+                            <div data-bs-popper="static"
+                                class="dashboard-dropdown dropdown-menu-end mt-4 py-0 dropdown-menu show dropdown-menu-end"
+                                aria-labelledby="dropdownUser"><a data-rr-ui-dropdown-item="" class="mt-3 dropdown-item"
+                                    role="button" tabindex="0" href="#">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md avatar-indicators avatar-online"><img alt="avatar"
+                                                src="/images/navbar_avatar.jpg"
+                                                class="rounded-circle"></div>
+                                        <div class="ms-3 lh-1">
+                                            <h5 class="mb-1">Annette Black</h5>
+                                            <p class="mb-0 text-muted">annette@geeksui.com</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <hr class="dropdown-divider" role="separator"><a aria-selected="false"
+                                    data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                    href="#"><i class="fe fe-user me-2"></i> Profile</a><a aria-selected="false"
+                                    data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                    href="#"><i class="fe fe-star me-2"></i> Subscription</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                    href="#"><i class="fe fe-settings me-2"></i> Settings</a>
+                                <hr class="dropdown-divider" role="separator"><a data-rr-ui-dropdown-item=""
+                                    class="mb-3 dropdown-item" role="button" tabindex="0" href="#"><i
+                                        class="fe fe-power me-2"></i> Sign Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div><button aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation"
+                    class="navbar-toggler collapsed"><span class="icon-bar top-bar mt-0"></span><span
+                        class="icon-bar middle-bar"></span><span class="icon-bar bottom-bar"></span></button>
+                    <!--  -->
+                <div class="navbar-collapse collapse" id="basic-navbar-nav">
+                    <div class="navbar-nav">
+                        <div class="nav-item show dropdown"><a aria-expanded="true" role="button"
+                                class="dropdown-toggle show nav-link" tabindex="0" href="#">Browse<i class="ri-arrow-down-s-line"></i></a>
+                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0" href="#">Web
+                                        Development<i class="ri-arrow-down-s-line"></i></a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Bootstrap</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">React</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">GraphQl</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Gatsby</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Grunt</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Svelte</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Meteor</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">HTML5</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Angular</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Design<i class="ri-arrow-down-s-line"></i></a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Graphic Design</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Illustrator</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">UX / UI Design</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Figma Design</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Adobe XD</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Sketch</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Icon Design</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Photoshop</a></div>
+                                </div><a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Mobile App</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">IT Software</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Marketing</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Music</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Life Style</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Business</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Photography</a>
+                            </div>
+                        </div>
+                        <div class="nav-item show dropdown"><a aria-expanded="true" role="button"
+                                class="dropdown-toggle show nav-link" tabindex="0" href="#">Landings<i class="ri-arrow-down-s-line"></i></a>
+                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                <h4 class="dropdown-header">LANDINGS</h4><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Mentor</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Education</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Home Academy</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Courses</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Lead Course</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Request Access</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">SaaS</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Job Listing</a>
+                            </div>
+                        </div>
+                        <div class="nav-item show dropdown"><a aria-expanded="true" role="button"
+                                class="dropdown-toggle show nav-link" tabindex="0" href="#">Pages<i class="ri-arrow-down-s-line"></i></a>
+                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Courses</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course Single</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course Single v2</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course Resume</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course Category</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course Checkout</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Course List/Grid</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Add New Course</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Paths</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Browse Path</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Path Single</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Blog</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Listing</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Article</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Category</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Sidebar</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Career</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Overview</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Listing</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Opening</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Portfolio</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">List</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Single</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Mentor</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Home</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">List</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Single</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0" href="#">Job</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="/">Home</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">List</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Grid</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Single</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Company List</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Company Single</a></div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Specialty</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Coming Soon</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Error 404</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Maintenance Mode</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Terms &amp; Conditions</a>
+                                    </div>
+                                </div>
+                                <hr class="mx-3" role="separator"><a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">About</a>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0" href="#">Help
+                                        Center</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby=""><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Help Center</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">FAQ's</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Guide</a><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item"
+                                            href=""">Guide
+                                            Single</a><a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Support</a></div>
+                                </div><a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Pricing</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Compare Plan</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Contact</a>
+                            </div>
+                        </div>
+                        <div class="nav-item show dropdown"><a aria-expanded="true" role="button"
+                                class="dropdown-toggle show nav-link" tabindex="0" href="#">Accounts<i class="ri-arrow-down-s-line"></i></a>
+                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                <h4 class="dropdown-header">Accounts</h4>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Instructor</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                        <h5 class="dropdown-header text-dark">Instructor</h5>
+                                        <p class="dropdown-text mb-0 text-wrap">Instructor dashboard for manage courses
+                                            and earning.</p>
+                                        <hr class="mx-3" role="separator"><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item"
+                                            href="">Dashboard</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Profile</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">My Courses</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Orders</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Reviews</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Students</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Payouts</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Earning</a>
+                                        <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                                aria-expanded="true" role="button"
+                                                class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                                href="#">Quiz</a>
+                                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                                <a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Quiz</a><a
+                                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Single</a><a
+                                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Result</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Students</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                        <h5 class="dropdown-header text-dark">Students</h5>
+                                        <p class="dropdown-text mb-0 text-wrap">Students dashboard to manage your
+                                            courses and subscriptions.</p>
+                                        <hr class="mx-3" role="separator"><a data-rr-ui-dropdown-item=""
+                                            class="dropdown-item" href="">Dashboard</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="/">Subscriptions</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Payments</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Billing Info</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Invoice</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Invoice Details</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">Bookmarked</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item"
+                                            href="">My Path</a>
+                                        <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                                aria-expanded="true" role="button"
+                                                class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                                href="#">Quiz</a>
+                                            <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                                <a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Quiz</a><a
+                                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Attempt</a><a
+                                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Start</a><a
+                                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                                    href="">Result</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-submenu dropend py-0  nav-item show dropdown"><a
+                                        aria-expanded="true" role="button"
+                                        class="dropdown-toggle show dropdown-item d-block" tabindex="0"
+                                        href="#">Admin</a>
+                                    <div data-bs-popper="static" class="dropdown-menu show" aria-labelledby="">
+                                        <h5 class="dropdown-header text-dark">Master Admin</h5>
+                                        <p class="dropdown-text mb-0 text-wrap">Master admin dashboard to manage
+                                            courses, user, site setting, and work with amazing apps.</p>
+                                        <hr class="mx-3" role="separator">
+                                        <div class="px-3 d-grid"><a class="btn btn-sm btn-primary text-center"
+                                                href="">Go to Dashboard</a></div>
+                                    </div>
+                                </div>
+                                <hr class="mx-3" role="separator"><a data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Sign In</a><a data-rr-ui-dropdown-item=""
+                                    class="dropdown-item" href="">Sign Up</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Forgot Password</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Edit Profile</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Security</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Social Profiles</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Notifications</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Privacy Settings</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Delete Profile</a><a
+                                    data-rr-ui-dropdown-item="" class="dropdown-item"
+                                    href="">Linked Accounts</a>
+                            </div>
+                        </div>
+                        <div class="nav-item show dropdown"><a id="basic-nav-dropdown" aria-expanded="true"
+                                role="button"
+                                class="dropdown-toggle show no-dropdown-arrow d-block nav-link fs-3 lh-1 pt-0"
+                                tabindex="0" href="#">...</a>
+                            <div data-bs-popper="static" class="dropdown-menu show"
+                                aria-labelledby="basic-nav-dropdown"><a href=""
+                                    data-rr-ui-dropdown-item="" class="py-2 px-3 dropdown-item">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fe fe-file-text fs-3 text-primary"></i>
+                                        <div class="ms-3 lh-3">
+                                            <h5 class="mb-0">Documentation</h5>
+                                            <p class="mb-0 fs-6">Browse the all documentation</p>
+                                        </div>
+                                    </div>
+                                </a><a href="" data-rr-ui-dropdown-item=""
+                                    class="py-2 px-3 dropdown-item">
+                                    <div class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16" width="20" height="20" fill="currentColor"
+                                            class="bi bi-files fs-3 text-primary">
+                                            <path
+                                                d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z">
+                                            </path>
+                                        </svg>
+                                        <div class="ms-3 lh-3">
+                                            <h5 class="mb-0">Snippets <span class="badge bg-primary">New</span></h5>
+                                            <p class="mb-0 fs-6">Bunch of Snippet</p>
+                                        </div>
+                                    </div>
+                                </a><a href="" data-rr-ui-dropdown-item=""
+                                    class="py-2 px-3 dropdown-item">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fe fe-layers fs-3 text-primary"></i>
+                                        <div class="ms-3 lh-3">
+                                            <h5 class="mb-0">Changelog <span class="text-primary ms-1">v3.0.0</span>
+                                            </h5>
+                                            <p class="mb-0 fs-6">See what's new</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                        </div>
+                    </div>
+                    <form class="mt-3 mt-lg-0 ms-lg-3 d-flex align-items-center"><span
+                            class="position-absolute ps-3 search-icon"><i class="fe fe-search"></i></span><input
+                            placeholder="Search Courses" type="Search" id="formSearch" class="ps-6 form-control"></form>
+                    <div class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap navbar-nav"><span
+                            class="ms-auto mt-1  d-none"><a class="btn btn-white shadow-sm me-2 btn"
+                                href="">Sign In</a><a
+                                class="btn btn-primary shadow-sm btn" href="">Sign
+                                Up</a></span><span class="d-flex">
+                            <div class="ms-2 undefined dropdown"><a
+                                    class="btn btn-light btn-icon rounded-circle d-flex align-items-center  "
+                                    id="dropdownUser" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor"
+                                        class="bi bi-sun-fill">
+                                        <path
+                                            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708">
+                                        </path>
+                                    </svg><span class="visually-hidden bs-theme-text">Toggle theme</span></a>
+                                <div data-bs-popper="static"
+                                    class="dashboard-dropdown dropdown-menu-end mt-1 py-0 dropdown-menu show dropdown-menu-end"
+                                    aria-labelledby="dropdownUser"><a aria-selected="false" data-rr-ui-dropdown-item=""
+                                        class="mt-3 dropdown-item" role="button" tabindex="0" href="#"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor" class="bi bi-sun-fill">
+                                            <path
+                                                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708">
+                                            </path>
+                                        </svg><span class="ms-2">Light</span></a><a aria-selected="false"
+                                        data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                        href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="1em"
+                                            height="1em" fill="currentColor" class="bi bi-moon-stars-fill">
+                                            <path
+                                                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278">
+                                            </path>
+                                            <path
+                                                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z">
+                                            </path>
+                                        </svg><span class="ms-2">Dark</span></a><a aria-selected="false"
+                                        data-rr-ui-dropdown-item="" class="mb-3 dropdown-item" role="button"
+                                        tabindex="0" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor"
+                                            class="bi bi-circle-half">
+                                            <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"></path>
+                                        </svg><span class="ms-2">Auto</span></a></div>
+                            </div>
+                            <ul class="navbar-right-wrap ms-2 d-flex nav-top-wrap navbar-nav">
+                                <li class="dropdown"><a
+                                        class="text-dark icon-notifications me-lg-1  btn btn-light btn-icon rounded-circle indicator indicator-primary text-muted  "
+                                        id="dropdownNotification" aria-expanded="false"><i class="fe fe-bell"></i></a>
+                                    <div data-bs-popper="static"
+                                        class="dashboard-dropdown notifications-dropdown dropdown-menu-lg dropdown-menu-end mt-3 py-0 dropdown-menu show dropdown-menu-end"
+                                        aria-labelledby="dropdownNotification">
+                                        <div
+                                            class="border-bottom px-3 pt-3 pb-3 d-flex justify-content-between align-items-end">
+                                            <span class="h4 mb-0">Notifications</span><a class="text-muted"
+                                                href="# "><span class="align-middle"><i
+                                                        class="fe fe-settings me-1"></i></span></a></div>
+                                        <div data-simplebar="init" class="simplebar-scrollable-y"
+                                            style="max-height: 300px;">
+                                            <div class="simplebar-wrapper" style="margin: 0px;">
+                                                <div class="simplebar-height-auto-observer-wrapper">
+                                                    <div class="simplebar-height-auto-observer"></div>
+                                                </div>
+                                                <div class="simplebar-mask">
+                                                    <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                                                        <div class="simplebar-content-wrapper" tabindex="0"
+                                                            role="region" aria-label="scrollable content"
+                                                            style="height: auto; overflow: hidden scroll;">
+                                                            <div class="simplebar-content" style="padding: 0px;">
+                                                                <div class="list-group list-group-flush">
+                                                                    <div class="bg-light list-group-item">
+                                                                        <div class="row">
+                                                                            <div class="col"><a class="text-body"
+                                                                                    href="">
+                                                                                    <div class="d-flex"><img
+                                                                                            src="/images/navbar_avatar.jpg"
+                                                                                            alt=""
+                                                                                            class="avatar-md rounded-circle">
+                                                                                        <div class="ms-3">
+                                                                                            <h5 class="fw-bold mb-1">
+                                                                                                Kristin Watson</h5>
+                                                                                            <p class="mb-3">Krisitn
+                                                                                                Watsan like your comment
+                                                                                                on course Javascript
+                                                                                                Introduction!</p><span
+                                                                                                class="fs-6 text-muted"><span><span
+                                                                                                        class="fe fe-thumbs-up text-success me-1"></span>2
+                                                                                                    hours
+                                                                                                    ago</span><span
+                                                                                                    class="ms-1">2:19
+                                                                                                    PM</span></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a></div>
+                                                                            <div class="text-center me-2 col-auto"><a
+                                                                                    href=""><span
+                                                                                        class="me-2"><span
+                                                                                            class="badge-dot badge bg-secondary"></span>
+                                                                                    </span></a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="list-group-item">
+                                                                        <div class="row">
+                                                                            <div class="col"><a class="text-body"
+                                                                                    href="">
+                                                                                    <div class="d-flex"><img
+                                                                                            src="/images/navbar_avatar.jpg"
+                                                                                            alt=""
+                                                                                            class="avatar-md rounded-circle">
+                                                                                        <div class="ms-3">
+                                                                                            <h5 class="fw-bold mb-1">
+                                                                                                Brooklyn Simmons</h5>
+                                                                                            <p class="mb-3">Just
+                                                                                                launched a new Courses
+                                                                                                React for Beginner.</p>
+                                                                                            <span
+                                                                                                class="fs-6 text-muted"><span><span
+                                                                                                        class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                                    9,</span><span
+                                                                                                    class="ms-1">1:20
+                                                                                                    PM</span></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a></div>
+                                                                            <div class="text-center me-2 col-auto"><a
+                                                                                    href=""><span
+                                                                                        class="me-2"><span
+                                                                                            class="badge-dot badge bg-secondary"></span>
+                                                                                    </span></a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="list-group-item">
+                                                                        <div class="row">
+                                                                            <div class="col"><a class="text-body"
+                                                                                    href="">
+                                                                                    <div class="d-flex"><img
+                                                                                            src=""
+                                                                                            alt=""
+                                                                                            class="avatar-md rounded-circle">
+                                                                                        <div class="ms-3">
+                                                                                            <h5 class="fw-bold mb-1">
+                                                                                                Jenny Wilson</h5>
+                                                                                            <p class="mb-3">Krisitn
+                                                                                                Watsan like your comment
+                                                                                                on course Javascript
+                                                                                                Introduction!</p><span
+                                                                                                class="fs-6 text-muted"><span><span
+                                                                                                        class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                                    9,</span><span
+                                                                                                    class="ms-1">1:56
+                                                                                                    PM</span></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a></div>
+                                                                            <div class="text-center me-2 col-auto"><a
+                                                                                    href=""><span
+                                                                                        class="me-2"><span
+                                                                                            class="badge-dot badge bg-secondary"></span>
+                                                                                    </span></a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="list-group-item">
+                                                                        <div class="row">
+                                                                            <div class="col"><a class="text-body"
+                                                                                    href="">
+                                                                                    <div class="d-flex"><img
+                                                                                            src="./images/navbar_avatar.jpg"
+                                                                                            alt=""
+                                                                                            class="avatar-md rounded-circle">
+                                                                                        <div class="ms-3">
+                                                                                            <h5 class="fw-bold mb-1">
+                                                                                                Sina Ray</h5>
+                                                                                            <p class="mb-3">You earn new
+                                                                                                certificate for complete
+                                                                                                the Javascript Beginner
+                                                                                                course.</p><span
+                                                                                                class="fs-6 text-muted"><span><span
+                                                                                                        class="fe fe-thumbs-up text-success me-1"></span>Oct
+                                                                                                    9,</span><span
+                                                                                                    class="ms-1">1:56
+                                                                                                    PM</span></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </a></div>
+                                                                            <div class="text-center me-2 col-auto"><a
+                                                                                    href=""><span
+                                                                                        class="me-2"><span
+                                                                                            class="badge-dot badge bg-secondary"></span>
+                                                                                    </span></a></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="simplebar-placeholder" style="width: 352px; height: 586px;">
+                                                </div>
+                                            </div>
+                                            <div class="simplebar-track simplebar-horizontal"
+                                                style="visibility: hidden;">
+                                                <div class="simplebar-scrollbar" style="width: 0px; display: none;">
+                                                </div>
+                                            </div>
+                                            <div class="simplebar-track simplebar-vertical"
+                                                style="visibility: visible;">
+                                                <div class="simplebar-scrollbar"
+                                                    style="height: 153px; transform: translate3d(0px, 0px, 0px); display: block;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top px-3 pt-3 pb-3"><a class="text-link fw-semi-bold"
+                                                href="">See all Notifications</a></div>
+                                    </div>
+                                </li>
+                                <li class="ms-1 dropdown"><a class="rounded-circle  " id="dropdownUser"
+                                        aria-expanded="false">
+                                        <div class="avatar avatar-md avatar-indicators avatar-online"><img alt="avatar"
+                                                src="./images/navbar_avatar.jpg"
+                                                class="rounded-circle"></div>
+                                    </a>
+                                    <div data-bs-popper="static"
+                                        class="dashboard-dropdown dropdown-menu-end mt-4 py-0 dropdown-menu show dropdown-menu-end"
+                                        aria-labelledby="dropdownUser"><a data-rr-ui-dropdown-item=""
+                                            class="mt-3 dropdown-item" role="button" tabindex="0" href="#">
+                                            <div class="d-flex">
+                                                <div class="avatar avatar-md avatar-indicators avatar-online"><img
+                                                        alt="avatar"
+                                                        src="./images/navbar_avatar.jpg"
+                                                        class="rounded-circle"></div>
+                                                <div class="ms-3 lh-1">
+                                                    <h5 class="mb-1">Annette Black</h5>
+                                                    <p class="mb-0 text-muted">annette@geeksui.com</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <hr class="dropdown-divider" role="separator"><a aria-selected="false"
+                                            data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                            href="#"><i class="fe fe-user me-2"></i> Profile</a><a aria-selected="false"
+                                            data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                            href="#"><i class="fe fe-star me-2"></i> Subscription</a><a
+                                            data-rr-ui-dropdown-item="" class="dropdown-item" role="button" tabindex="0"
+                                            href="#"><i class="fe fe-settings me-2"></i> Settings</a>
+                                        <hr class="dropdown-divider" role="separator"><a data-rr-ui-dropdown-item=""
+                                            class="mb-3 dropdown-item" role="button" tabindex="0" href="#"><i
+                                                class="fe fe-power me-2"></i> Sign Out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </span></div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Heros Section -->
+        <main>
+            <section class="pt-lg-8 pb-lg-16 pt-8 pb-12 bg-primary">
+                <div class="container">
+                    <div class="align-items-center row">
+                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                            <div>
+                                <h1 class="text-white display-4 fw-semi-bold">Getting Started with JavaScript</h1>
+                                <p class="text-white mb-6 lead">JavaScript is the popular programming language which
+                                    powers web pages and web applications. This course will get you started coding in
+                                    JavaScript.</p>
+                                <div class="d-flex align-items-center"><a
+                                        class="bookmark text-white text-decoration-none"
+                                        href="/"><i
+                                            class="fe fe-bookmark text-white-50 me-2"></i>Bookmark</a><span
+                                        class="text-white ms-3"><i class="fe fe-user text-white-50"></i> 1200 Enrolled
+                                    </span><span class="ms-4"><span class="text-warning"><svg viewBox="0 0 24 24"
+                                                role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                                                <path
+                                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                    style="fill: currentcolor;"></path>
+                                            </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                style="width: 0.875rem; height: 0.875rem;">
+                                                <path
+                                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                    style="fill: currentcolor;"></path>
+                                            </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                style="width: 0.875rem; height: 0.875rem;">
+                                                <path
+                                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                    style="fill: currentcolor;"></path>
+                                            </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                style="width: 0.875rem; height: 0.875rem;">
+                                                <path
+                                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                    style="fill: currentcolor;"></path>
+                                            </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                style="width: 0.875rem; height: 0.875rem;">
+                                                <path
+                                                    d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                    style="fill: currentcolor;"></path>
+                                            </svg><span class="text-white ms-1">(140)</span></span></span><span
+                                        class="text-white ms-4 d-none d-md-block"><svg width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="3" y="8" width="2" height="6" rx="1" fill="#DBD8E9"></rect>
+                                            <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                            <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                        </svg> <span class="align-middle">Intermediate</span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-n8 mb-4 mb-lg-0 col-lg-8 col-md-12 col-sm-12">
+                            <div class="card">
+                                <div class="nav-lb-tab nav" role="tablist">
+                                    <div class="nav-item"><a href="#" role="tab" data-rr-ui-event-key="contents"
+                                            id="react-aria1115652452-:rr:-tab-contents"
+                                            aria-controls="react-aria1115652452-:rr:-tabpane-contents"
+                                            aria-selected="true" class="mb-sm-3 mb-md-0 nav-link active">Contents</a>
+                                    </div>
+                                    <div class="nav-item"><a href="#" role="tab"
+                                            data-rr-ui-event-key="description"
+                                            id="react-aria1115652452-:rr:-tab-description"
+                                            aria-controls="react-aria1115652452-:rr:-tabpane-description"
+                                            aria-selected="false" tabindex="-1"
+                                            class="mb-sm-3 mb-md-0 nav-link">Description</a></div>
+                                    <div class="nav-item"><a href="#" role="tab" data-rr-ui-event-key="reviews"
+                                            id="react-aria1115652452-:rr:-tab-reviews"
+                                            aria-controls="react-aria1115652452-:rr:-tabpane-reviews"
+                                            aria-selected="false" tabindex="-1"
+                                            class="mb-sm-3 mb-md-0 nav-link">Reviews</a></div>
+                                    <div class="nav-item"><a href="#" role="tab"
+                                            data-rr-ui-event-key="transcript"
+                                            id="react-aria1115652452-:rr:-tab-transcript"
+                                            aria-controls="react-aria1115652452-:rr:-tabpane-transcript"
+                                            aria-selected="false" tabindex="-1"
+                                            class="mb-sm-3 mb-md-0 nav-link">Transcript</a></div>
+                                    <div class="nav-item"><a href="#" role="tab" data-rr-ui-event-key="faq"
+                                            id="react-aria1115652452-:rr:-tab-faq"
+                                            aria-controls="react-aria1115652452-:rr:-tabpane-faq" aria-selected="false"
+                                            tabindex="-1" class="mb-sm-3 mb-md-0 nav-link">FAQ</a></div>
+                                </div>
+                                <div class="p-0 card-body">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" id="react-aria1115652452-:rr:-tabpane-contents"
+                                            aria-labelledby="react-aria1115652452-:rr:-tab-contents"
+                                            class="fade pb-4 pt-3 px-4 tab-pane active show">
+                                            <div class="accordion">
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="px-0 list-group-item"><a aria-expanded="true"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Introduction to JavaScript</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        <div class="test accordion-collapse collapse show">
+                                                            <ul class="py-4 list-group">
+                                                                <li class="px-0 py-1 border-0 list-group-item"><a
+                                                                        class="d-flex justify-content-between align-items-center text-inherit text-decoration-none"
+                                                                        href="">
+                                                                        <div class="text-truncate "><span
+                                                                                class="icon-shape bg-light icon-sm rounded-circle me-2"><svg
+                                                                                    viewBox="0 0 24 24"
+                                                                                    role="presentation"
+                                                                                    style="width: 1.2rem; height: 1.2rem;">
+                                                                                    <path
+                                                                                        d="M8,5.14V19.14L19,12.14L8,5.14Z"
+                                                                                        style="fill: currentcolor;">
+                                                                                    </path>
+                                                                                </svg> </span><span
+                                                                                class="fs-5">Introduction</span></div>
+                                                                        <div class="text-truncate"><span>1m 7s</span>
+                                                                        </div>
+                                                                    </a></li>
+                                                                <li class="px-0 py-1 border-0 list-group-item"><a
+                                                                        class="d-flex justify-content-between align-items-center text-inherit text-decoration-none"
+                                                                        href="">
+                                                                        <div class="text-truncate "><span
+                                                                                class="icon-shape bg-light icon-sm rounded-circle me-2"><svg
+                                                                                    viewBox="0 0 24 24"
+                                                                                    role="presentation"
+                                                                                    style="width: 1.2rem; height: 1.2rem;">
+                                                                                    <path
+                                                                                        d="M8,5.14V19.14L19,12.14L8,5.14Z"
+                                                                                        style="fill: currentcolor;">
+                                                                                    </path>
+                                                                                </svg> </span><span
+                                                                                class="fs-5">Installing Development
+                                                                                Software</span></div>
+                                                                        <div class="text-truncate"><span>3m 11s</span>
+                                                                        </div>
+                                                                    </a></li>
+                                                                <li class="px-0 py-1 border-0 list-group-item"><a
+                                                                        class="d-flex justify-content-between align-items-center text-inherit text-decoration-none"
+                                                                        href="">
+                                                                        <div class="text-truncate "><span
+                                                                                class="icon-shape bg-light icon-sm rounded-circle me-2"><svg
+                                                                                    viewBox="0 0 24 24"
+                                                                                    role="presentation"
+                                                                                    style="width: 1.2rem; height: 1.2rem;">
+                                                                                    <path
+                                                                                        d="M8,5.14V19.14L19,12.14L8,5.14Z"
+                                                                                        style="fill: currentcolor;">
+                                                                                    </path>
+                                                                                </svg> </span><span class="fs-5">Hello
+                                                                                World Project from GitHub</span></div>
+                                                                        <div class="text-truncate"><span>2m 33s</span>
+                                                                        </div>
+                                                                    </a></li>
+                                                                <li tabindex="-1" aria-disabled="true"
+                                                                    class="px-0 py-1 border-0 list-group-item disabled">
+                                                                    <a class="d-flex justify-content-between align-items-center text-inherit text-decoration-none"
+                                                                        href="">
+                                                                        <div class="text-truncate "><span
+                                                                                class="icon-shape bg-light icon-sm rounded-circle me-2"><i
+                                                                                    class="fe fe-lock fs-4"></i>
+                                                                            </span><span class="fs-5">Our Sample
+                                                                                Website</span></div>
+                                                                        <div class="text-truncate"><span>2m 15s</span>
+                                                                        </div>
+                                                                    </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">JavaScript Beginning</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Variables and Constants</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Program Flow</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Functions</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Objects and the DOM</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Arrays</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Scope and Hoisting</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        
+                                                    </li>
+                                                    <li class="px-0 list-group-item"><a aria-expanded="false"
+                                                            class="d-flex align-items-center text-inherit text-decoration-none h4 mb-0"
+                                                            data-bs-toggle="collapse" aria-controls="courseTwo"
+                                                            href="">
+                                                            <div class="me-auto">Summary</div><span
+                                                                class="chevron-arrow ms-4"><i
+                                                                    class="fe fe-chevron-down fs-4"></i></span>
+                                                        </a>
+                                                        <div class="accordion-collapse collapse">
+                                                            <div class="list-group list-group-flush">
+                                                                <div class="border-0 fs-5 px-0 py-4 list-group-item">
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                    elit.
+                                                                    Repudiandae esse velit eos sunt ab inventore est
+                                                                    tenetur blanditiis?
+                                                                    Voluptas eius molestiae ad itaque tempora nobis
+                                                                    minima eveniet aperiam molestias,
+                                                                    maiores natus expedita dolores ea non possimus
+                                                                    magnam corrupt i quas rem unde quo
+                                                                    enim porro culpa! Quaerat veritatis veniam corrupti
+                                                                    iusto.</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" id="react-aria1115652452-:rr:-tabpane-description"
+                                            aria-labelledby="react-aria1115652452-:rr:-tab-description"
+                                            class="fade pb-4 p-4 tab-pane">
+                                            <div class="mb-4">
+                                                <h3 class="mb-2">Course Descriptions</h3>
+                                                <p>If you’re learning to program for the first time, or if you’re coming
+                                                    from a different language, this course, JavaScript: Getting Started,
+                                                    will give you the basics for coding in JavaScript. First, you'll
+                                                    discover the types of applications that can be built with
+                                                    JavaScript, and the platforms they’ll run on.</p>
+                                                <p>Next, you’ll explore the basics of the language, giving plenty of
+                                                    examples. Lastly, you’ll put your JavaScript knowledge to work and
+                                                    modify a modern, responsive web page. When you’re finished with this
+                                                    course, you’ll have the skills and knowledge in JavaScript to create
+                                                    simple programs, create simple web applications, and modify web
+                                                    pages.</p>
+                                            </div>
+                                            <h4 class="mb-3">What you’ll learn</h4>
+                                            <div class="mb-3 row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="list-unstyled list-unstyled-flush">
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-2"></i><span>Recognize
+                                                                the importance of understanding your objectives when
+                                                                addressing an audience.</span></div>
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-2"></i><span>Identify
+                                                                the fundaments of composing a successful close.</span>
+                                                        </div>
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-2"></i><span>Explore
+                                                                how to connect with your audience through crafting
+                                                                compelling stories.</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="list-unstyled list-unstyled-flush">
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-1"></i>
+                                                            <span>Examine ways to connect with your audience by
+                                                                personalizing your content.</span></div>
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-1"></i><span>Break
+                                                                down the best ways to exude executive presence.</span>
+                                                        </div>
+                                                        <div class="d-flex mb-2  "><i
+                                                                class="far fa-check-circle text-success me-2 mt-1"></i><span>Explore
+                                                                how to communicate the unknown in an impromptu
+                                                                communication.</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>Maecenas viverra condimentum nulla molestie condimentum. Nunc ex libero,
+                                                feugiat quis lectus vel, ornare euismod ligula. Aenean sit amet arcu
+                                                nulla.</p>
+                                            <p>Duis facilisis ex a urna blandit ultricies. Nullam sagittis ligula non
+                                                eros semper, nec mattis odio ullamcorper. Phasellus feugiat sit amet leo
+                                                eget consectetur.</p>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-lg-n22 col-lg-4 col-md-12 col-sm-12">
+                            <div class="mb-3 mb-4 card">
+                                <div class="p-1">
+                                    <div class="d-flex justify-content-center position-relative rounded py-10 border-white border rounded-3 bg-cover"
+                                        style="background: url('./images//javascript.jpg') center top / cover no-repeat;">
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3"><span class="text-dark fw-bold h2 me-2">$600</span><del
+                                            class="fs-4 text-muted">$750</del></div>
+                                    <div class="d-grid"><a class="btn btn-primary mb-2  "
+                                            href="">Start Free Month</a><a
+                                            class="btn btn-outline-primary" href="">Get Full
+                                            Access</a></div>
+                                </div>
+                            </div>
+                            <div class="mb-4 card">
+                                <div class="card-header">
+                                    <h4 class="mb-0">What’s included</h4>
+                                </div>
+                                <div class="p-0 card-body">
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item"><i
+                                                class="fe fe-play-circle align-middle me-2 text-primary"></i>12 hours
+                                            video</div>
+                                        <div class="list-group-item"><i
+                                                class="fe fe-award me-2 align-middle text-success"></i>Certificate</div>
+                                        <div class="list-group-item"><i
+                                                class="fe fe-calendar align-middle me-2 text-info"></i>12 Article</div>
+                                        <div class="list-group-item"><i
+                                                class="fe fe-video align-middle me-2 text-secondary"></i>Watch Offline
+                                        </div>
+                                        <div class="bg-transparent list-group-item"><i
+                                                class="fe fe-clock align-middle me-2 text-warning"></i>Lifetime access
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="position-relative"><img
+                                                src="/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt=""
+                                                class="rounded-circle avatar-xl"><a class="position-absolute mt-2 ms-n3"
+                                                data-bs-toggle="tooltip" data-placement="top" title="Verifed" 
+                                                href=""><img
+                                                    src="./images/navbar_avatar.jpg" class="rounded" style="width: 80px;height: 80px;"
+                                                    alt="" height="30" width="30" class=""></a></div>
+                                        <div class="ms-4">
+                                            <h4 class="mb-0">Jenny Wilson</h4>
+                                            <p class="mb-1 fs-6">Front-end Developer, Designer</p><span
+                                                class="fs-6"><span class="text-warning">4.5</span><span
+                                                    class="mdi mdi-star text-warning me-2"></span>Instructor
+                                                Rating</span>
+                                        </div>
+                                    </div>
+                                    <div class="border-top mt-3 border-bottom mb-3 g-0 row">
+                                        <div class="col">
+                                            <div class="pe-1 ps-2 py-3">
+                                                <h5 class="mb-0">11,604</h5><span>Students</span>
+                                            </div>
+                                        </div>
+                                        <div class="border-start col">
+                                            <div class="pe-1 ps-3 py-3">
+                                                <h5 class="mb-0">32</h5><span>Courses</span>
+                                            </div>
+                                        </div>
+                                        <div class="border-start col">
+                                            <div class="pe-1 ps-3 py-3">
+                                                <h5 class="mb-0">12,230</h5><span>Reviews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>I am an Innovation designer focussing on UX/UI based in Berlin. As a creative
+                                        resident at Figma explored the city of the future and how new technologies.</p>
+                                    <a class="btn btn-outline-secondary btn-sm"
+                                        href="/marketing/instructor/instructor-edit-profile/">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-12 pb-3">
+                        <div class="d-md-flex align-items-center mb-4 row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <h2 class="mb-0">Related Courses</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="mb-4 card-hover  card"><a href=""><img
+                                            src="./images/javascript.jpg" alt=""
+                                            class="card-img-top rounded-top-md"></a>
+                                    <div class="card-body">
+                                        <h3 class="h4 mb-2 text-truncate-line-2 "><a class="text-inherit"
+                                                href="/marketing/courses/course-single/">A Complete Beginner’s Guide to
+                                                JavaScript</a></h3>
+                                        <ul class="mb-3 list-inline">
+                                            <li class="list-inline-item"><i class="far fa-clock me-1"></i>4h 10m</li>
+                                            <li class="list-inline-item"><svg class="me-1 mt-n1" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE">
+                                                    </rect>
+                                                </svg>Advance</li>
+                                        </ul>
+                                        <div class="lh-1 d-flex align-items-center mb-5"><span
+                                                class="text-warning me-1 mb-1"><svg viewBox="0 0 24 24"
+                                                    role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg></span><span class="text-warning me-1"> 3.5</span><span
+                                                class="fs-6 text-muted"> (7,500)</span></div>
+                                        <div class="lh-1 mt-3 d-none"><span class="text-dark fw-bold">$700</span> <del
+                                                class="fs-6 text-muted">$850</del></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="align-items-center g-0 row">
+                                            <div class="col-auto"><img
+                                                    src="./images/cards_avatar.jpg" alt=""
+                                                    class="rounded-circle avatar-xs"></div>
+                                            <div class="col ms-2 col"><span>Jenny Wilson</span></div>
+                                            <div class="col-auto"><a href=""><i
+                                                        class="fe fe-bookmark"></i></a></div>
+                                        </div><span class="d-none">
+                                            <div class="mt-3 progress" style="height: 5px;">
+                                                <div role="progressbar" class="progress-bar bg-success"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 50%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="mb-4 card-hover  card"><a href=""><img
+                                            src="./images/javascript.jpg" alt=""
+                                            class="card-img-top rounded-top-md"></a>
+                                    <div class="card-body">
+                                        <h3 class="h4 mb-2 text-truncate-line-2 "><a class="text-inherit"
+                                                href="">Applying JavaScript and using
+                                                the console.</a></h3>
+                                        <ul class="mb-3 list-inline">
+                                            <li class="list-inline-item"><i class="far fa-clock me-1"></i>2h 46m</li>
+                                            <li class="list-inline-item"><svg class="me-1 mt-n1" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9">
+                                                    </rect>
+                                                </svg>Beginner</li>
+                                        </ul>
+                                        <div class="lh-1 d-flex align-items-center mb-5"><span
+                                                class="text-warning me-1 mb-1"><svg viewBox="0 0 24 24"
+                                                    role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg></span><span class="text-warning me-1"> 2.5</span><span
+                                                class="fs-6 text-muted"> (19,500)</span></div>
+                                        <div class="lh-1 mt-3 d-none"><span class="text-dark fw-bold">$600</span> <del
+                                                class="fs-6 text-muted">$750</del></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="align-items-center g-0 row">
+                                            <div class="col-auto"><img
+                                                    src="/images/cards_avatar.jpg" alt=""
+                                                    class="rounded-circle avatar-xs"></div>
+                                            <div class="col ms-2 col"><span>Guy Hawkins</span></div>
+                                            <div class="col-auto"><a href="/marketing/courses/course-single/"><i
+                                                        class="fe fe-bookmark"></i></a></div>
+                                        </div><span class="d-none">
+                                            <div class="mt-3 progress" style="height: 5px;">
+                                                <div role="progressbar" class="progress-bar bg-success"
+                                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 95%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="mb-4 card-hover  card"><a href=""><img
+                                            src="./images/javascript.jpg" alt=""
+                                            class="card-img-top rounded-top-md"></a>
+                                    <div class="card-body">
+                                        <h3 class="h4 mb-2 text-truncate-line-2 "><a class="text-inherit"
+                                                href="">Creating a Custom Event in
+                                                Javascript</a></h3>
+                                        <ul class="mb-3 list-inline">
+                                            <li class="list-inline-item"><i class="far fa-clock me-1"></i>2h 46m</li>
+                                            <li class="list-inline-item"><svg class="me-1 mt-n1" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9">
+                                                    </rect>
+                                                </svg>Beginner</li>
+                                        </ul>
+                                        <div class="lh-1 d-flex align-items-center mb-5"><span
+                                                class="text-warning me-1 mb-1"><svg viewBox="0 0 24 24"
+                                                    role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg></span><span class="text-warning me-1"> 4.5</span><span
+                                                class="fs-6 text-muted"> (9,300)</span></div>
+                                        <div class="lh-1 mt-3 d-none"><span class="text-dark fw-bold">$600</span> <del
+                                                class="fs-6 text-muted">$750</del></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="align-items-center g-0 row">
+                                            <div class="col-auto"><img
+                                                    src="./images/cards_avatar.jpg" alt=""
+                                                    class="rounded-circle avatar-xs"></div>
+                                            <div class="col ms-2 col"><span>Juanita Bell</span></div>
+                                            <div class="col-auto"><a href="/marketing/courses/course-single/"><i
+                                                        class="fe fe-bookmark"></i></a></div>
+                                        </div><span class="d-none">
+                                            <div class="mt-3 progress" style="height: 5px;">
+                                                <div role="progressbar" class="progress-bar bg-success"
+                                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 55%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="mb-4 card-hover  card"><a href="/marketing/courses/course-single/"><img
+                                            src="./images/javascript.jpg" alt=""
+                                            class="card-img-top rounded-top-md"></a>
+                                    <div class="card-body">
+                                        <h3 class="h4 mb-2 text-truncate-line-2 "><a class="text-inherit"
+                                                href="">Morden JavaScript Beginner
+                                                Tutorial - Simple</a></h3>
+                                        <ul class="mb-3 list-inline">
+                                            <li class="list-inline-item"><i class="far fa-clock me-1"></i>2h 46m</li>
+                                            <li class="list-inline-item"><svg class="me-1 mt-n1" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9">
+                                                    </rect>
+                                                </svg>Beginner</li>
+                                        </ul>
+                                        <div class="lh-1 d-flex align-items-center mb-5"><span
+                                                class="text-warning me-1 mb-1"><svg viewBox="0 0 24 24"
+                                                    role="presentation" style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg><svg viewBox="0 0 24 24" role="presentation"
+                                                    style="width: 0.92rem; height: 0.92rem;">
+                                                    <path
+                                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                                        style="fill: currentcolor;"></path>
+                                                </svg></span><span class="text-warning me-1"> 4.5</span><span
+                                                class="fs-6 text-muted"> (7,800)</span></div>
+                                        <div class="lh-1 mt-3 d-none"><span class="text-dark fw-bold">$600</span> <del
+                                                class="fs-6 text-muted">$750</del></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="align-items-center g-0 row">
+                                            <div class="col-auto"><img
+                                                    src="./images/cards_avatar.jpg" alt=""
+                                                    class="rounded-circle avatar-xs"></div>
+                                            <div class="col ms-2 col"><span>Ted Hawkins</span></div>
+                                            <div class="col-auto"><a href="/marketing/courses/course-single/"><i
+                                                        class="fe fe-bookmark"></i></a></div>
+                                        </div><span class="d-none">
+                                            <div class="mt-3 progress" style="height: 5px;">
+                                                <div role="progressbar" class="progress-bar bg-success"
+                                                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width: 45%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer bg-transparent">
+            <div class="container">
+                <div class="align-items-center g-0 border-top py-2 row">
+                    <div class="text-center text-md-start col-md-6 col-sm-12"><span>© 2024 Geeks. All Rights
+                            Reserved.</span></div>
+                    <div class="col-md-6 col-sm-12">
+                        <nav class="nav nav-footer justify-content-center justify-content-md-end"><a
+                                class="nav-link active ps-0" href="">Privacy</a><a
+                                class="nav-link" href="">Terms </a><a class="nav-link"
+                                href="">Feedback</a><a class="nav-link"
+                                href="">Support</a></nav>
+                    </div>
+                </div>
+            </div><a class="btn btn-dark btn-float-button m-5 fs-4"
+                href="https://themes.getbootstrap.com/product/geeks-admin-dashboard-template-react/"
+                target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-share">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M12.5 17h-6.5v-14h-2"></path>
+                    <path d="M6 5l14 1l-1 7h-13"></path>
+                    <path d="M16 22l5 -5"></path>
+                    <path d="M21 21.5v-4.5h-4.5"></path>
+                </svg> Buy Now</a>
+            <div class="btn-scroll-top"><svg class="progress-square svg-content" width="100%" height="100%"
+                    viewBox="0 0 40 40">
+                    <path
+                        d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"
+                        style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 139.989, 139.989; stroke-dashoffset: 139.989;">
+                    </path>
+                </svg></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+.border-primary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-primary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-secondary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-secondary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-success {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-success-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-info {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-info-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-warning {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-warning-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-danger {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-danger-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-white {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-white-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-primary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-primary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-danger {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-danger-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-info {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-info-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-warning {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-warning-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-secondary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-secondary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-success {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-success-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-light-dark {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-light-dark-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-primary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-primary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-warning {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-warning-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-info {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-info-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-danger {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-danger-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-success {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-success-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-dark-secondary {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-dark-secondary-rgb),var(--geeks-border-opacity))!important
+}
+
+.border-black {
+    --geeks-border-opacity: 1;
+    border-color: rgba(var(--geeks-black-rgb),var(--geeks-border-opacity))!important
+}
+
+.fw-semibold {
+    font-weight: 600!important
+}

@@ -1,0 +1,214 @@
+.avatar {
+    display: inline-block;
+    height: 3rem;
+    position: relative;
+    width: 3rem
+}
+
+.avatar-xs {
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+.avatar-sm {
+    height: 2rem;
+    width: 2rem
+}
+
+.avatar-md {
+    height: 2.5rem;
+    width: 2.5rem
+}
+
+.avatar-lg {
+    height: 3.5rem;
+    width: 3.5rem
+}
+
+.avatar-xl {
+    height: 5rem;
+    width: 5rem
+}
+
+.avatar-xxl {
+    height: 7.5rem;
+    width: 7.5rem
+}
+
+.avatar img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.avatar-offline:before {
+    background-color: #94a3b8;
+    background-color: var(--geeks-gray-400)
+}
+
+.avatar-online:before {
+    background-color: #38a169;
+    background-color: var(--geeks-success)
+}
+
+.avatar-away:before {
+    background-color: #f59e0b;
+    background-color: var(--geeks-warning)
+}
+
+.avatar-busy:before {
+    background-color: #dc2626;
+    background-color: var(--geeks-danger)
+}
+
+.avatar-info:before {
+    background-color: #0ea5e9;
+    background-color: var(--geeks-info)
+}
+
+.avatar-indicators:before {
+    border: 2px solid #fff;
+    border: 2px solid var(--geeks-white);
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    display: table;
+    height: 30%;
+    position: absolute;
+    right: 5%;
+    width: 30%
+}
+
+.avatar-initials {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.avatar-primary .avatar-initials {
+    background-color: #754ffe;
+    background-color: var(--geeks-primary);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-secondary .avatar-initials {
+    background-color: #64748b;
+    background-color: var(--geeks-secondary);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-success .avatar-initials {
+    background-color: #38a169;
+    background-color: var(--geeks-success);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-warning .avatar-initials {
+    background-color: #f59e0b;
+    background-color: var(--geeks-warning);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-info .avatar-initials {
+    background-color: #0ea5e9;
+    background-color: var(--geeks-info);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-danger .avatar-initials {
+    background-color: #dc2626;
+    background-color: var(--geeks-danger);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-light .avatar-initials {
+    background-color: #f1f5f9;
+    background-color: var(--geeks-light);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-dark .avatar-initials {
+    background-color: #0f172a;
+    background-color: var(--geeks-dark);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-primary-soft .avatar-initials {
+    background-color: #ede9fe;
+    color: #754ffe;
+    color: var(--geeks-primary)
+}
+
+.avatar-secondary-soft .avatar-initials {
+    background-color: #64748b;
+    background-color: var(--geeks-secondary);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-success-soft .avatar-initials {
+    background-color: #d1f5ea;
+    background-color: var(--geeks-light-success);
+    color: #38a169;
+    color: var(--geeks-success)
+}
+
+.avatar-warning-soft .avatar-initials {
+    background-color: #ffeeda;
+    background-color: var(--geeks-light-warning);
+    color: #f59e0b;
+    color: var(--geeks-warning)
+}
+
+.avatar-info-soft .avatar-initials {
+    background-color: #e1f6ff;
+    background-color: var(--geeks-light-info);
+    color: #0ea5e9;
+    color: var(--geeks-info)
+}
+
+.avatar-danger-soft .avatar-initials {
+    background-color: #fad9d8;
+    background-color: var(--geeks-light-danger);
+    color: #dc2626;
+    color: var(--geeks-danger)
+}
+
+.avatar-dark-soft .avatar-initials {
+    background-color: #d1cfd8;
+    background-color: var(--geeks-light-dark);
+    color: #fff;
+    color: var(--geeks-white)
+}
+
+.avatar-light-soft .avatar-initials {
+    background-color: #f1f5f9;
+    background-color: var(--geeks-light);
+    color: #0f172a;
+    color: var(--geeks-dark)
+}
+
+.avatar-group .avatar+.avatar {
+    margin-left: -1.2rem
+}
+
+.avatar-group .avatar:hover {
+    z-index: 2
+}
+
+.avatar-group .avatar .avatar-initials,.avatar-group img {
+    border: 3px solid #fff;
+    border: 3px solid var(--geeks-white)
+}
