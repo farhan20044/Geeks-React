@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-
 body {
     font-family: 'Inter', sans-serif !important;
 }
@@ -9,8 +7,12 @@ body {
     display: none !important;
 }
 .dropdown-toggle .bi-chevron-down {
-    margin-left: 6px;
-    font-size: 12px;
+    
+    margin-left: 3.1px;
+    font-size: 11px;
+}
+.bi-camera-video{
+    z-index: 1;
 }
 
 .navbar-nav .dropdown:hover .dropdown-menu {
@@ -51,6 +53,7 @@ body {
 
 .dropdown-menu .dropdown-submenu:hover .dropdown-menu {
     display: block;
+    transition: all ease-in-out 0.5s;
 }
 
 form input{
@@ -215,7 +218,33 @@ form input{
     font-size: 0.49rem;
 }
 .bookmark:hover{
-    
     color: #724ffe;
     transition: all ease 0.2s;
+}
+
+.ls-1{
+    letter-spacing: -1px; 
+}
+.color-grey{
+    color: #ffffff80 ;
+}
+.fs-5 {
+    font-size: 1.25rem !important;
+}
+.display-4 {
+    font-size: 1.5rem;
+}
+.btn:hover {
+    background-color: #333a4a;
+    border-color: #272e3f;
+    color: #fff;
+}
+.h-5{
+    height: 2.56rem !important;
+}
+.small-text{
+    font-size: 0.87rem;
+}
+.dark{
+    background: rgb(0, 0, 0);
 }
